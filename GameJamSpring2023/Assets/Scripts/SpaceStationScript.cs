@@ -6,7 +6,7 @@ public class SpaceStationScript : MonoBehaviour
 {
     int OnOrOff = 0; // on is 1 off is 0
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
