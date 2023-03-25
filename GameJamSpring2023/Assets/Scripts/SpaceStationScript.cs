@@ -6,6 +6,7 @@ public class SpaceStationScript : MonoBehaviour
 {
     public int OnOrOff = 0; // on is 1 off is 0
     int playerIsInMeXD = 0;
+    public int arrAdded = 0;
 
     void OnTriggerEnter2D(Collider2D other)
     {
