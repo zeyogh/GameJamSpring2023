@@ -23,7 +23,11 @@ public class PlayerController : MonoBehaviour
     {
         // Handle user input
         Vector2 targetVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
+        if (targetVelocity != Vector2.zero)
+        {
+            float angle = Mathf.Atan2(targetVelocity.y, targetVelocity.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
         Move(targetVelocity);
     }
 

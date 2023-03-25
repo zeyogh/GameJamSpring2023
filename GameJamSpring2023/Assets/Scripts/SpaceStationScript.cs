@@ -26,10 +26,16 @@ public class SpaceStationScript : MonoBehaviour
         }
     }
 
-    void FixedUpdate(){
-        if(playerIsInMeXD == 1 && Input.GetKeyDown(KeyCode.Space)){
-            Debug.Log("Space Station is ACTIVE");
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.M)){
+             if(playerIsInMeXD == 1 && OnOrOff == 0){
+                OnOrOff = 1;
+                Debug.Log("Daddy Im on!!!");
+             }
         }
+
+        
     }
     
 }
