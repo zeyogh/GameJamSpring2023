@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour
             PauseGame();
            // DialoguePanel.SetActive(true);
         }
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            UnpauseGame();
+        }
     }
 
     public void PauseGame()

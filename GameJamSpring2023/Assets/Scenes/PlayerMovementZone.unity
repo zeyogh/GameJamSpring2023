@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db9e7482083b5cb4f9089386b7e3797e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DialoguePanel: {fileID: 0}
 --- !u!4 &183380962
 Transform:
   m_ObjectHideFlags: 0
@@ -326,6 +327,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1463935421128828008, guid: 0de04f70d680a934b815a9ffbc54fee6, type: 3}
+      propertyPath: movementSpeed
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 2390104182165548390, guid: 0de04f70d680a934b815a9ffbc54fee6, type: 3}
       propertyPath: m_RootOrder
       value: 1
