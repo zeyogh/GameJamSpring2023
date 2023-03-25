@@ -17,18 +17,12 @@ public class Enemy : MonoBehaviour
 
     private float time;
 
-    private float pX;
-
-    private float pY;
-
-    private Rigidbody2D rb;
-
     // Use this for initialization
     void Start()
     {
         time = 0;
         player = gameObject;
-        rb = this.GetComponent<Rigidbody2D>();
+        enemyPlayer = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
