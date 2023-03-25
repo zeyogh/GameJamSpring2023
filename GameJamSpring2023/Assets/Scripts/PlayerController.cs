@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
         rigidbody2D.gravityScale = 0.0f;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         // Handle user input
         Vector2 targetVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
