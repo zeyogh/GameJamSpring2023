@@ -4,79 +4,66 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject enemyPlayer;
+    public GameObject player; //the enemy the script is assigned to
+    public GameObject bulletPrefab;
+    public GameObject bulletStart;
 
-    [SerializeField] GameObject projectile;
+    public float speed = 2.0f;
 
-    [SerializeField] GameObject player;
+    public float bulletSpeed = 60.0f;
 
-    private float x;
+    private Vector3 target;
 
-    private float y;
+    private float time;
 
     private float pX;
 
     private float pY;
 
-    private Vector2 target;
 
-    private float speed;
-
-    private float timer;
-
-    // Start is called before the first frame update
+    // Use this for initialization
     void Start()
     {
-        x = this.transform.position.x;
-        y = this.transform.position.y;
-        speed = 12f;
-        timer = 0f;
+        time = 0;
+        player = gameObject;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
+        target = enemyPlayer.transform.position;
 
-        x = this.transform.position.x;
-        y = this.transform.position.y;
+        Vector3 difference = target - player.transform.position;
+        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+        player.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+        time += Time.deltaTime;
 
-        pX = player.getX();
-        pY = player.getY();
-
-        Vector2 difference = new Vector2(pX - x, pY - y);
-        float rotation = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-
-        if (Mathf.Abs(x - pX) <= 100 || Mathf.Abs(y - pY) <= 100)
+        if (Mathf.Abs(target.x - player.transform.position.x) < 100 || Mathf.Abs(target.y - player.transform.position.y) < 100)
         {
-            move(pX, pY);
-            if (timer > 3.0f)
-            {
-                float distance = difference.magnitude;
-                Vector2 direction = difference / distance;
-                direction.Normalize();
-                shoot(direction, rotation);
-                timer = 0;
-            }
+            move();
+        }
 
+        if (time > 2.0f)
+        {
+            float distance = difference.magnitude;
+            Vector2 direction = difference / distance;
+            direction.Normalize();
+            fireBullet(direction, rotationZ);
+            time = 0;
         }
     }
-
-    void shoot(Vector2 direction, float rotation)
+    void fireBullet(Vector2 direction, float rotationZ)
     {
-        var bullet = Instantiate(projectile, this.transform.position, this.transform.rotation);
-        bullet.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = direction * bullet.bulletSpeed();
-        bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 10);
+        GameObject b = Instantiate(bulletPrefab) as GameObject;
+        b.transform.position = bulletStart.transform.position;
+        b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+        b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
     }
 
-    void move(float pX, float pY)
+    private void move()
     {
-        Vector2 vThis = new Vector2((float)x, (float)y);
-        Vector2 vPlayer = new Vector2(pX, pY);
-
-        float step = speed * Time.deltaTime;
-
-        // move sprite towards the target location
-        transform.position = Vector2.MoveTowards(vThis, vPlayer, step);
+        var step = speed * Time.deltaTime; // calculate distance to move
+        transform.position = Vector3.MoveTowards(player.transform.position, enemyPlayer.transform.position, step);
     }
 }
