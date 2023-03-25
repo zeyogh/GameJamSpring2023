@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5051006523557880069}
   - component: {fileID: 3814963103698146890}
+  - component: {fileID: 3672321060115626407}
+  - component: {fileID: 625298902164225098}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -50,7 +52,42 @@ MonoBehaviour:
   bulletPrefab: {fileID: 379370372671623684, guid: c2f3e6f2955812b449bd34c0f1a9fd5c, type: 3}
   bulletStart: {fileID: 2663199021280339357}
   speed: 2
-  bulletSpeed: 2
+  bulletSpeed: 12
+--- !u!50 &3672321060115626407
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2663199021280339357}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &625298902164225098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2663199021280339357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58fe3d3a0a775f4f8fcaaba1e7d6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8430617121348322018, guid: 0de04f70d680a934b815a9ffbc54fee6, type: 3}
+  moveSpeed: 2
 --- !u!1 &8255033920476852124
 GameObject:
   m_ObjectHideFlags: 0

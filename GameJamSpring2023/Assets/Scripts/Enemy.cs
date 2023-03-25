@@ -21,12 +21,14 @@ public class Enemy : MonoBehaviour
 
     private float pY;
 
+    private Rigidbody2D rb;
 
     // Use this for initialization
     void Start()
     {
         time = 0;
         player = gameObject;
+        rb = this.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -36,13 +38,9 @@ public class Enemy : MonoBehaviour
 
         Vector3 difference = target - player.transform.position;
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        player.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
+        //player.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         time += Time.deltaTime;
 
-        if (Mathf.Abs(target.x - player.transform.position.x) < 100 || Mathf.Abs(target.y - player.transform.position.y) < 100)
-        {
-            move();
-        }
 
         if (time > 2.0f)
         {
@@ -53,6 +51,9 @@ public class Enemy : MonoBehaviour
             time = 0;
         }
     }
+
+
+
     void fireBullet(Vector2 direction, float rotationZ)
     {
         GameObject b = Instantiate(bulletPrefab) as GameObject;
@@ -61,9 +62,4 @@ public class Enemy : MonoBehaviour
         b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
     }
 
-    private void move()
-    {
-        var step = speed * Time.deltaTime; // calculate distance to move
-        transform.position = Vector3.MoveTowards(player.transform.position, enemyPlayer.transform.position, step);
-    }
 }

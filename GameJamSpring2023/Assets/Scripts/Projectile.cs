@@ -6,18 +6,14 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] int speed;
 
-    private void Start()
-    {
-        this.GetComponent<Rigidbody2D>().gravityScale = 0f;
-    }
-
     public int bulletSpeed()
     {
         return speed;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(this);
+        Debug.Log("hit detected");
+        Destroy(gameObject);
     }
 }
