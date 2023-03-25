@@ -53,6 +53,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7e0cc6e9a33a5e4daf08fcc9d4de64b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 379370372671623684, guid: c2f3e6f2955812b449bd34c0f1a9fd5c, type: 3}
+  bulletStart: {fileID: 7495657366904027894}
+  bulletSpeed: 60
   movementSpeed: 10
 --- !u!50 &8794901335071497361
 Rigidbody2D:
