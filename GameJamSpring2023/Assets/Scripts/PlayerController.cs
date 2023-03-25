@@ -6,8 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     // Local rigidbody variable to hold a reference to the attached Rigidbody2D component
     new Rigidbody2D rigidbody2D;
+    public GameObject bulletPrefab;
+    public GameObject bulletStart;
+    public float bulletSpeed = 20.0f;
 
     public float movementSpeed = 1000.0f;
+    private float angle;
+    private Vector2 targetVelocity;
 
     void Awake()
     {
@@ -22,10 +27,10 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Handle user input
-        Vector2 targetVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        targetVelocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         if (targetVelocity != Vector2.zero)
         {
-            float angle = Mathf.Atan2(targetVelocity.y, targetVelocity.x) * Mathf.Rad2Deg;
+            angle = Mathf.Atan2(targetVelocity.y, targetVelocity.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
         Move(targetVelocity);
@@ -37,13 +42,46 @@ public class PlayerController : MonoBehaviour
         rigidbody2D.velocity = (targetVelocity * movementSpeed * Time.deltaTime) ; // Multiply the target by deltaTime to make movement speed consistent across different framerates
     }
 
-    public float GetX()
+    public void Fire()
     {
-        return rigidbody2D.position.x;
-    }
+        GameObject b = Instantiate(bulletPrefab) as GameObject;
+        b.transform.SetPositionAndRotation(bulletStart.transform.position, Quaternion.Euler(0.0f, 0.0f, rigidbody2D.rotation));
+        if (targetVelocity != Vector2.zero)
+        {
+            b.GetComponent<Rigidbody2D>().velocity = targetVelocity * bulletSpeed;
+        }  else
+        {
+            float z = transform.rotation.eulerAngles.z;
+            Debug.Log(z);
+            Vector2 vel;
 
-    public float GetY()
-    {
-        return rigidbody2D.position.y;
+            if (z == 0)
+            {
+                vel = Vector2.right;
+            } else if (z == 90)
+            {
+                vel = Vector2.up;
+            }  else if (z == 180)
+            {
+                vel = Vector2.left;
+            } else if (z == 270)
+            {
+                vel = Vector2.down;
+            } else if (z == 135)
+            {
+                vel = new Vector2(-1f, 1f);
+            }
+            else if (z == 315)
+            {
+                vel = new Vector2(1f, -1f);
+            }
+            else
+            {
+                vel = (Vector2.one * angle).normalized;
+            }
+ 
+            b.GetComponent<Rigidbody2D>().velocity = vel * bulletSpeed;
+        }
+        
     }
 }

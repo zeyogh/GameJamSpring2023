@@ -5,10 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject DialoguePanel;
+    PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = FindObjectOfType<PlayerController>();
     }
 
     // Update is called once per frame
@@ -23,6 +24,11 @@ public class GameManager : MonoBehaviour
         {
             UnpauseGame();
             DialoguePanel.SetActive(false);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("fire");
+            player.Fire();
         }
     }
 
