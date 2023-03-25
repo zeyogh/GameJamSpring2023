@@ -17,11 +17,12 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Backspace))
         {
             PauseGame();
-           // DialoguePanel.SetActive(true);
+            DialoguePanel.SetActive(true);
         }
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             UnpauseGame();
+            DialoguePanel.SetActive(false);
         }
     }
 
