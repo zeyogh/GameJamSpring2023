@@ -9,6 +9,7 @@ TagManager:
   - BulletHolder
   - EnemyLaser
   - BulletSprite
+  - Barrier
   layers:
   - Default
   - TransparentFX

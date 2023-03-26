@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpaceStationManager : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class SpaceStationManager : MonoBehaviour
     
     GameObject SpawnedBeam;
     int[] beamSpawned = new int[9];
+
+    [SerializeField] Dialogue level1dio;
+    public DialogueManager dialogueManager;
+    private bool on = false;
     
 
     
@@ -36,8 +41,14 @@ public class SpaceStationManager : MonoBehaviour
     }
 
     void Update(){
-        
-        if(SS1.GetComponent<SpaceStationScript>().OnOrOff == 1 && SS1.GetComponent<SpaceStationScript>().arrAdded == 0){
+        //Debug.Log(SceneManager.GetActiveScene().ToString());
+        if (SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("Level1")) && allOn == 1 && !on)
+        {
+            dialogueManager.StartDialogue(level1dio);
+            on = true;
+        }
+
+        if (SS1.GetComponent<SpaceStationScript>().OnOrOff == 1 && SS1.GetComponent<SpaceStationScript>().arrAdded == 0){
             SpSt[index] = SS1;
             SpSt[index].GetComponent<SpaceStationScript>().arrAdded = 1;
             index++;
@@ -90,6 +101,7 @@ public class SpaceStationManager : MonoBehaviour
 
         if(index == 10){
             allOn = 1;
+
         }
         
         
