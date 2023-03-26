@@ -19,9 +19,18 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 direction = player.position - transform.position;
-        direction.Normalize();
-        movement = direction;
+        float pX = player.position.x;
+        float pY = player.position.y;
+        float difX = Mathf.Abs(pX - gameObject.transform.position.x);
+        float difY = Mathf.Abs(pX - gameObject.transform.position.y);
+        float distance = Mathf.Sqrt((difX * difX) + (difY * difY));
+
+        if (distance < 10)
+        {
+            Vector3 direction = player.position - transform.position;
+            direction.Normalize();
+            movement = direction;
+        }
     }
     private void FixedUpdate()
     {

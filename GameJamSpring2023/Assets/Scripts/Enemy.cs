@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour
 
     void fireBullet(Vector2 direction, float rotationZ)
     {
-        GameObject b = Instantiate(bulletPrefab) as GameObject;
+        GameObject b = Instantiate(bulletPrefab);
         b.transform.position = bulletStart.transform.position;
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7792976647390749402}
   - component: {fileID: 6329932001367571130}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hexagon Flat-Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,9 +96,9 @@ GameObject:
   - component: {fileID: 6606665375325644925}
   - component: {fileID: 8802407654498843208}
   - component: {fileID: 8951420010102925478}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

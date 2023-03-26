@@ -17,6 +17,7 @@ public class SpaceStationManager : MonoBehaviour
     GameObject[] SpSt = new GameObject[10];
     int index = 0;
     float x, y, x2, y2;
+    public int allOn = 0;
     
     GameObject SpawnedBeam;
     int[] beamSpawned = new int[9];
@@ -87,6 +88,9 @@ public class SpaceStationManager : MonoBehaviour
             SpSt[0].GetComponent<SpaceStationScript>().OnOrOff = 0;
         }
 
+        if(index == 10){
+            allOn = 1;
+        }
         
         
         if(index==2 && beamSpawned[index-2] == 0){
