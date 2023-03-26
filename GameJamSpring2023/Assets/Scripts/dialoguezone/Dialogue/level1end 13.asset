@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
+  m_Name: level1end 13
+  m_EditorClassIdentifier: 
+  character: {fileID: 11400000, guid: 54ce5f2ed50734b448380188cfd1c42e, type: 2}
+  sentences:
+  - I will follow you through the gates of Hell, my comrade.
+  nextDialogue: {fileID: 11400000, guid: 0febedf994ddc844a9c2150f59a36e0b, type: 2}
+  dialogueTail: {fileID: 0}
+  background: {fileID: 0}

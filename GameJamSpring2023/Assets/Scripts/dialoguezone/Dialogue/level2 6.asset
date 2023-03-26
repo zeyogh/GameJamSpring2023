@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61ff53e8dcb57864088d8c6b8866662a, type: 3}
-  m_Name: Stooge3
+  m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
+  m_Name: level2 6
   m_EditorClassIdentifier: 
-  NPCName: Goon3
-  NPCSprite: {fileID: 0}
-  voice: {fileID: 0}
+  character: {fileID: 0}
+  sentences: []
+  nextDialogue: {fileID: 0}
+  dialogueTail: {fileID: 0}
+  background: {fileID: 0}
