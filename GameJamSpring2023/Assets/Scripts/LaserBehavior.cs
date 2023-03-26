@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaserBehavior : MonoBehaviour
 {
-
+    [SerializeField] LayerMask layerMask;
     public Camera cam;
     public LineRenderer lineRenderer;
     public Transform firePoint;
@@ -19,6 +19,8 @@ public class LaserBehavior : MonoBehaviour
     {
         fillLists();
         disableLaser();
+
+        Physics2D.IgnoreLayerCollision(6, 6);
     }
 
     // Update is called once per frame
@@ -63,7 +65,7 @@ public class LaserBehavior : MonoBehaviour
         lineRenderer.SetPosition(1, mousePos); //second position/point
 
         Vector2 direction = mousePos - (Vector2)transform.position;
-        RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position, direction.normalized, direction.magnitude);
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position, direction.normalized, direction.magnitude, layerMask);
     
         if (hit)
         {

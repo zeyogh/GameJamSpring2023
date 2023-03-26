@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3574985340412635805}
   m_Layer: 6
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: BulletSprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

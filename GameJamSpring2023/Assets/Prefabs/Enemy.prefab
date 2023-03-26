@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 625298902164225098}
   - component: {fileID: 1434285781959667432}
   - component: {fileID: 207910434890630141}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -127,7 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  newParentObject: {fileID: 5224109569575150290, guid: 46157cbd2ba058940bb4c0d23e46eaea, type: 3}
 --- !u!1 &8255033920476852124
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1654817167097843104}
   - component: {fileID: 2970765734740210502}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
