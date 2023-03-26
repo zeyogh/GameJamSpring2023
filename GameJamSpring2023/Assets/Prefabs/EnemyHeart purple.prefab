@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 315542662845604737}
   - component: {fileID: 2502265996205182332}
   - component: {fileID: 5248708215344172832}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EnemyHeart purple
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3113816018792880299}
   - component: {fileID: 1466180775928589805}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Isometric Diamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,10 +9,6 @@ public class Laser : MonoBehaviour
     public LineRenderer m_lineRenderer;
     Transform m_transform;
 
-    private void Awake()
-    {
-        
-    }
 
     void ShootLaser()
     {

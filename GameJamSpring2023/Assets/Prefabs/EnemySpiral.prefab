@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8107396992506734294}
   - component: {fileID: 8672387076149472203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hexagon Flat-Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2765304175480745282}
   - component: {fileID: 8588560485812608200}
   - component: {fileID: 1512710651280383350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EnemySpiral
   m_TagString: Enemy
   m_Icon: {fileID: 0}

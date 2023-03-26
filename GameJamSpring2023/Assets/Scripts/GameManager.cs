@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject DialoguePanel;
     PlayerController player;
+    private float bulletDelay = 0.125f;
+    private float time = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time += Time.deltaTime;
         if (Input.GetKeyUp(KeyCode.Backspace))
         {
             PauseGame();
@@ -25,9 +28,9 @@ public class GameManager : MonoBehaviour
             UnpauseGame();
             DialoguePanel.SetActive(false);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && time > bulletDelay)
         {
-            Debug.Log("fire");
+            time = 0f;
             player.Fire();
         }
     }
