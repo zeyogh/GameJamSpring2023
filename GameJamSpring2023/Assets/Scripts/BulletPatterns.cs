@@ -17,11 +17,11 @@ public class BulletPatterns : MonoBehaviour
     {
         if (useSpiral)
         {
-            InvokeRepeating("spiral", 0f, 0.2f);
+            InvokeRepeating("spiral", 0f, 0.75f);
         }
         if (useMultiBulletCircle)
         {
-            InvokeRepeating("multiBulletCircle", 0f, 1f);
+            InvokeRepeating("multiBulletCircle", 0f, 3f);
         }
     }
 

@@ -184,6 +184,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 625298902164225098, guid: 004ce3aa9ac8fd0439f8c67fb0e72a5b, type: 3}
+      propertyPath: moveSpeed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2663199021280339357, guid: 004ce3aa9ac8fd0439f8c67fb0e72a5b, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -323,11 +327,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8430617121348322018, guid: 0de04f70d680a934b815a9ffbc54fee6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.08
+      value: -36.7
       objectReference: {fileID: 0}
     - target: {fileID: 8430617121348322018, guid: 0de04f70d680a934b815a9ffbc54fee6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.24
+      value: -16.9
       objectReference: {fileID: 0}
     - target: {fileID: 8430617121348322018, guid: 0de04f70d680a934b815a9ffbc54fee6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -476,6 +480,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4324071081563116375, guid: 234d181c681388e4ab2bfb381355e609, type: 3}
+      propertyPath: moveSpeed
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234d181c681388e4ab2bfb381355e609, type: 3}
 --- !u!1 &1261665242
@@ -532,7 +540,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 25.33019
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -874,6 +882,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2765304175480745282, guid: 7a4a1408ee961c442a57821e7033e7af, type: 3}
+      propertyPath: moveSpeed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 3969782491812356387, guid: 7a4a1408ee961c442a57821e7033e7af, type: 3}
       propertyPath: m_RootOrder
       value: 1
