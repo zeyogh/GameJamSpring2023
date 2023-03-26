@@ -101,6 +101,15 @@ public class SpaceStationManager : MonoBehaviour
 
         if(index == 10){
             allOn = 1;
+            SS1.GetComponent<Laser>().enabled = true;
+            SS2.GetComponent<Laser>().enabled = true;
+            SS3.GetComponent<Laser>().enabled = true;
+            SS4.GetComponent<Laser>().enabled = true;
+            SS5.GetComponent<Laser>().enabled = true;
+            SS6.GetComponent<Laser>().enabled = true;
+            SS7.GetComponent<Laser>().enabled = true;
+            SS8.GetComponent<Laser>().enabled = true;
+            SS9.GetComponent<Laser>().enabled = true;
 
         }
         
