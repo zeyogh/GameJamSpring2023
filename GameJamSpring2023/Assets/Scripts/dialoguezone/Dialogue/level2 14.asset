@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
   m_Name: level2 14
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  sentences: []
-  nextDialogue: {fileID: 0}
+  character: {fileID: 11400000, guid: fb085db6f8946ab47a45b2b3622b169f, type: 2}
+  sentences:
+  - "\u2013TAKEN FROM YOU BY OUR\u2013WOULD YOU LET US FINISH?!"
+  nextDialogue: {fileID: 11400000, guid: 2c6bb95639c802e4e9248ccab84ece02, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

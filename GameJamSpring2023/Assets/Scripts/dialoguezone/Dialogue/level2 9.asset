@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
   m_Name: level2 9
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  sentences: []
-  nextDialogue: {fileID: 0}
+  character: {fileID: 11400000, guid: eb74978af32336d4faa04bcce838622a, type: 2}
+  sentences:
+  - "What are you all panicking for? It\u2019s just a bunch of big space rodents.
+    Nothing I haven\u2019t seen back in Florida."
+  - "This one\u2019s kind of cool, though. You guys ever seen a purple rat?"
+  nextDialogue: {fileID: 11400000, guid: e8c241d584ceee845960df76cc270ddc, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

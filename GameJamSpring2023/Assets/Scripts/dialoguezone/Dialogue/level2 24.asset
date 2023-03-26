@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
   m_Name: level2 24
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  sentences: []
+  character: {fileID: 11400000, guid: 54ce5f2ed50734b448380188cfd1c42e, type: 2}
+  sentences:
+  - Hey, Mr. buzzed-kill, get sober and help us out here!
   nextDialogue: {fileID: 0}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}
