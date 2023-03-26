@@ -24,6 +24,10 @@ public class MapColliderManager : MonoBehaviour
                 collision.transform.position = new Vector3(x, (float)199.5, 0);
             }
         }
+
+        if(collision.tag == "Projectile"){
+            Destroy(collision);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -43,6 +47,10 @@ public class MapColliderManager : MonoBehaviour
             }else if(y > 200){
                 collision.transform.position = new Vector3(x, (float)199.75, 0);
             }
+        }
+
+        if(collision.tag == "Projectile"){
+            Destroy(collision);
         }
     }
 
