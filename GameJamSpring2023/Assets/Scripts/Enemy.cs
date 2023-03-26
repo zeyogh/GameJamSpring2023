@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public GameObject enemyPlayer;
+    private GameObject enemyPlayer;
     public GameObject player; //the enemy the script is assigned to
     public GameObject bulletPrefab;
     public GameObject bulletStart;
