@@ -20,12 +20,21 @@ public class AimLaser : MonoBehaviour
     private GameObject ratKing;
     private Vector3 rk;
     private float time = 0f;
+    private bool spawned;
 
     // Start is called before the first frame update
     void Start()
     {
         fillLists();
         ratKing = GameObject.FindWithTag("Boss");
+        if (ratKing != null)
+        {
+            spawned = true;
+        }
+        else
+        {
+            spawned = false;
+        }
         enableLaser();
 
     }
@@ -38,6 +47,13 @@ public class AimLaser : MonoBehaviour
             disableLaser();
             return;
         }
+        else if (spawned == false)
+        {
+            spawned = true;
+            ratKing = GameObject.FindWithTag("Boss");
+
+        }
+
         time += Time.deltaTime;
         updateLaser();
         /*if (Input.GetButtonDown("Fire1"))
