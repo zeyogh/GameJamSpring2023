@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Debug.Log("tag: " + collision.gameObject.tag);
-        if ((collision.gameObject.tag == "Enemy"))
+        if ((collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Boss"))
         {
             GameObject enemy = collision.gameObject;
             enemy.GetComponent<EnemyHealth>().hit();
