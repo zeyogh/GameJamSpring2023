@@ -25,7 +25,7 @@ public class FollowPlayer : MonoBehaviour
         float difY = Mathf.Abs(pX - gameObject.transform.position.y);
         float distance = Mathf.Sqrt((difX * difX) + (difY * difY));
 
-        if (distance < 20)
+        if (distance < 10)
         {
             Vector3 direction = player.position - transform.position;
             direction.Normalize();

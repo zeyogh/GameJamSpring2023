@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3564029782674949627}
   - component: {fileID: 7574625316900633762}
+  - component: {fileID: 4324071081563116375}
+  - component: {fileID: 315542662845604737}
+  - component: {fileID: 2502265996205182332}
   m_Layer: 0
   m_Name: EnemyHeart
   m_TagString: Enemy
@@ -63,6 +66,55 @@ PolygonCollider2D:
       - {x: -0.49292988, y: -0.013692021}
       - {x: 0.004060507, y: -0.25447837}
       - {x: 0.52055955, y: 0.0025615692}
+--- !u!114 &4324071081563116375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721355851311988927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58fe3d3a0a775f4f8fcaaba1e7d6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.5
+--- !u!114 &315542662845604737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721355851311988927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5facaf933d35454439493e1b95edf2fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 5761626677960984209, guid: c2f3e6f2955812b449bd34c0f1a9fd5c, type: 3}
+  useSpiral: 0
+  useMultiBulletCircle: 1
+--- !u!50 &2502265996205182332
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721355851311988927}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5869520026499586036
 GameObject:
   m_ObjectHideFlags: 0

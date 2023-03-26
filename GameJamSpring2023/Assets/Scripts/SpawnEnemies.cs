@@ -5,12 +5,11 @@ using System;
 
 public class SpawnEnemies : MonoBehaviour
 {
+    [SerializeField] int mapDimensions;
     [SerializeField] GameObject enemy1;
     [SerializeField] GameObject enemy2;
     [SerializeField] GameObject enemy3;
 
-    private int xLength = 200;
-    private int yLength = 200;
     private System.Random rand;
     private int count = 0;
 
@@ -35,8 +34,8 @@ public class SpawnEnemies : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            int x = rand.Next(10, xLength - 9);
-            int y = rand.Next(10, yLength - 9);
+            int x = rand.Next(10, mapDimensions - 9);
+            int y = rand.Next(10, mapDimensions - 9);
             for (int j = 0; j < 3; j++)
             {
                 int xOffset = rand.Next(-10, 11);

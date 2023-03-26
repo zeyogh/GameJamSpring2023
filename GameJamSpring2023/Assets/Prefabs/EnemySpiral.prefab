@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 3969782491812356387}
   - component: {fileID: 4399384025589174596}
   - component: {fileID: 7516128596204363411}
+  - component: {fileID: 2765304175480745282}
+  - component: {fileID: 8588560485812608200}
   m_Layer: 0
   m_Name: EnemySpiral
   m_TagString: Enemy
@@ -164,3 +166,37 @@ PolygonCollider2D:
       - {x: 0.25405222, y: -0.43280888}
       - {x: 0.50222445, y: -0.012642503}
       - {x: 0.24682444, y: 0.44723088}
+--- !u!114 &2765304175480745282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606188518888978068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58fe3d3a0a775f4f8fcaaba1e7d6e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.5
+--- !u!50 &8588560485812608200
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606188518888978068}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
