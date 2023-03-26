@@ -29,6 +29,9 @@ public class Bullet : MonoBehaviour
             Debug.Log("kablooie");
         //    Destroy(collision.gameObject);
             Destroy(gameObject);
+        } else if (collision.gameObject.tag == "Barrier")
+        {
+            Destroy(gameObject);
         }
     }
 }

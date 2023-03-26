@@ -12,6 +12,9 @@ public class Intro : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        Debug.Log("boop");
+        GameManager gameManger = FindObjectOfType<GameManager>();
+        //gameManger.PauseGame();
         DialogueManager dialogueManager = FindObjectOfType<DialogueManager>();
         dialogueManager.StartDialogue(dialogue);
     }
