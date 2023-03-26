@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5facaf933d35454439493e1b95edf2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 5761626677960984209, guid: 621b78be74ccf3244b90d4ba76996df7, type: 3}
+  bullet: {fileID: 5761626677960984209, guid: f51afbbec0709f8418fc17a598d6c01a, type: 3}
   useSpiral: 0
   useMultiBulletCircle: 1
 --- !u!50 &2502265996205182332
@@ -225,7 +225,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e4fef420362357c4a8d0da06789bc1f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e687a5f7bc4fb2245aafc574c331c0a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
