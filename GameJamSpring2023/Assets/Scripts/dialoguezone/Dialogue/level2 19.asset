@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
   m_Name: level2 19
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  sentences: []
-  nextDialogue: {fileID: 0}
+  character: {fileID: 11400000, guid: fb085db6f8946ab47a45b2b3622b169f, type: 2}
+  sentences:
+  - PARDON. WE MUST DELIBERATE.
+  - WE ARE FINISHED DELIBERATING. WE BELIEVE ALLOWING YOUR PEOPLE INTO THE COLLECTIVE
+    WILL PROVE INCONVENIENT (and annoying) IN THE LONG RUN.
+  - INSTEAD, WE WILL ALLOW YOU A SWIFT CESSATION OF EXISTENCE.
+  nextDialogue: {fileID: 11400000, guid: 577b271bcb7d6494899b89f46dd533ac, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

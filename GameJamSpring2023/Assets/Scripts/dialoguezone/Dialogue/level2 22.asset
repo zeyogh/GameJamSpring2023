@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
   m_Name: level2 22
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  sentences: []
-  nextDialogue: {fileID: 0}
+  character: {fileID: 11400000, guid: bf46e0f6317366f46a2f810161784248, type: 2}
+  sentences:
+  - -long sigh- All units prepare for battle. Activate Protocol Divine Spear.
+  - And before any of you morons ask, yes, that means the giant space lasers.
+  nextDialogue: {fileID: 11400000, guid: ff90ebdedbf27d445beca446218762d5, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

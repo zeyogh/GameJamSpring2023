@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
   m_Name: level2 6
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  sentences: []
-  nextDialogue: {fileID: 0}
+  character: {fileID: 11400000, guid: 85d1dcdb867cde64280db0cf90b7386a, type: 2}
+  sentences:
+  - "Did he\u2013did he just say that on broadcast?"
+  nextDialogue: {fileID: 11400000, guid: 1843d171ade79ca47837b34f87ac32ce, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

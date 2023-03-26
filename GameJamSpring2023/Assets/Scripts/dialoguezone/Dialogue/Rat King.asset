@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ff53e8dcb57864088d8c6b8866662a, type: 3}
   m_Name: Rat King
   m_EditorClassIdentifier: 
-  NPCName: 
+  NPCName: Rat King
   NPCSprite: {fileID: 0}
   voice: {fileID: 0}

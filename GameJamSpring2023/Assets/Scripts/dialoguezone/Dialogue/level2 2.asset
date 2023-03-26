@@ -12,8 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
   m_Name: level2 2
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  sentences: []
-  nextDialogue: {fileID: 0}
+  character: {fileID: 11400000, guid: fb085db6f8946ab47a45b2b3622b169f, type: 2}
+  sentences:
+  - MORTALS.
+  - ACROSS TIME AND SPACE, OUR FORM HAS BEEN SUMMONED TO APPEAR BEFORE YOU.
+  - WE HAVE WITNESSED BEINGS LIKE YOU. FROM OTHER WORLDS.
+  - THEY WIELDED THE MIGHT OF THE COSMOS. MACHINES THAT BLOTTED OUT THE STARS THEMSELVES,
+    FORGED AGAINST OUR COLLECTIVE.
+  - THEY WERE MIGHTY. THEY WERE FELLED. THEY BEGGED FOR ABSOLUTION BEFORE THE END.
+  nextDialogue: {fileID: 11400000, guid: a2701aedda0fe4d4e92f85c1821b6fce, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

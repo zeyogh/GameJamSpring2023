@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
   m_Name: level2 12
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
-  sentences: []
-  nextDialogue: {fileID: 0}
+  character: {fileID: 11400000, guid: bf46e0f6317366f46a2f810161784248, type: 2}
+  sentences:
+  - Vessel #69420, do not antagonize the creature. We repeat, do not antagonize the
+    creature.
+  nextDialogue: {fileID: 11400000, guid: 44e3019fec9d045469c40fd1aa7c0f1e, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}
