@@ -36,6 +36,7 @@ public class BulletPatterns : MonoBehaviour
         b.transform.position = gameObject.transform.position;
         b.transform.rotation = gameObject.transform.rotation;
         b.setMoveDirection(bulDir);
+        b.transform.parent = gameObject.transform;
 
         angle += 20f;
 
@@ -56,6 +57,7 @@ public class BulletPatterns : MonoBehaviour
             b.transform.position = gameObject.transform.position;
             b.transform.rotation = gameObject.transform.rotation;
             b.setMoveDirection(bulDir);
+            b.transform.parent = gameObject.transform;
 
             angle += 60f;
         }
