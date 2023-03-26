@@ -13,6 +13,11 @@ public class EnemyHealth : MonoBehaviour
         newParentObject = GameObject.FindWithTag("BulletHolder");
     }
 
+    public int getHealth()
+    {
+        return health;
+    }
+
     public void hit()
     {
         if (health > 0)
