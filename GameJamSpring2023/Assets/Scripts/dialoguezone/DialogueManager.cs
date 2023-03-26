@@ -1,9 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class DialogueManager : MonoBehaviour
@@ -40,7 +39,7 @@ public class DialogueManager : MonoBehaviour
         {
             StartDialogue(startConversation);
         }
-        
+
     }
 
     public void ChangeBackground(Image image)
@@ -67,7 +66,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogueWithID(string dialougeID)
     {
-        foreach (DialogueHead head in conversationHeads) {
+        foreach (DialogueHead head in conversationHeads)
+        {
             if (head.conversationID.Equals(dialougeID))
             {
                 StartDialogueFromHead(head);
@@ -82,8 +82,8 @@ public class DialogueManager : MonoBehaviour
             background.sprite = head.background;
         }
         StartDialogue(head.firstDialogue);
-            
-        
+
+
     }
     public void StartDialogue(Dialogue dialogue)
     {
@@ -99,7 +99,7 @@ public class DialogueManager : MonoBehaviour
         {
             characterSprite.gameObject.SetActive(false);
         }
-        
+
 
         if (dialogue.character.voice != null)
         {
@@ -115,11 +115,11 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
         continueButton.gameObject.SetActive(true);
         sentences.Clear();
-        
-        
+
+
         nameText.text = currDialogue.character.NPCName;
 
-        
+
         foreach (string sentence in currDialogue.sentences)
         {
             sentences.Enqueue(sentence);
@@ -139,7 +139,7 @@ public class DialogueManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         dialogueText.text = sentence;
-      //  Debug.Log(sentence);
+        Debug.Log(sentence);
     }
 
     public void EndDialogue()
@@ -154,7 +154,7 @@ public class DialogueManager : MonoBehaviour
             {
                 background.sprite = currDialogue.dialogueTail.background;
             }
-            
+
         }
         if (currDialogue.nextDialogue == null)
         {
@@ -166,7 +166,7 @@ public class DialogueManager : MonoBehaviour
             {
                 loadNextScene.gameObject.SetActive(true);
             }
-            
+
 
         }
         else
@@ -177,6 +177,9 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            DisplayNextSentence();
+        }
     }
 }
