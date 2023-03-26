@@ -30,18 +30,9 @@ public class FollowPlayer : MonoBehaviour
             Vector3 direction = player.position - transform.position;
             direction.Normalize();
             movement = direction;
-            if (gameObject.GetComponent<PlaySound>() != null && gameObject.GetComponent<PlaySound>().enabled == false)
-            {
-                gameObject.GetComponent<PlaySound>().enabled = true;
-            }
+
         }
-        else
-        {
-            if (gameObject.GetComponent<PlaySound>().enabled == true)
-            {
-                gameObject.GetComponent<PlaySound>().enabled = false;
-            }
-        }
+
     }
     private void FixedUpdate()
     {

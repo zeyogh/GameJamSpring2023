@@ -53,7 +53,7 @@ MonoBehaviour:
   arrAdded: 0
   convo: {fileID: 0}
   dialogueManager: {fileID: 0}
-  src: {fileID: 1254622694816211866}
+  src: {fileID: 0}
 --- !u!61 &6740961767555123582
 BoxCollider2D:
   m_ObjectHideFlags: 0
