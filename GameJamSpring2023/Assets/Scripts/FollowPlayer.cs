@@ -22,7 +22,7 @@ public class FollowPlayer : MonoBehaviour
         float pX = player.position.x;
         float pY = player.position.y;
         float difX = Mathf.Abs(pX - gameObject.transform.position.x);
-        float difY = Mathf.Abs(pX - gameObject.transform.position.y);
+        float difY = Mathf.Abs(pY - gameObject.transform.position.y);
         float distance = Mathf.Sqrt((difX * difX) + (difY * difY));
 
         if (distance < 50)
@@ -30,6 +30,17 @@ public class FollowPlayer : MonoBehaviour
             Vector3 direction = player.position - transform.position;
             direction.Normalize();
             movement = direction;
+            if (gameObject.GetComponent<PlaySound>() != null && gameObject.GetComponent<PlaySound>().enabled == false)
+            {
+                gameObject.GetComponent<PlaySound>().enabled = true;
+            }
+        }
+        else
+        {
+            if (gameObject.GetComponent<PlaySound>().enabled == true)
+            {
+                gameObject.GetComponent<PlaySound>().enabled = false;
+            }
         }
     }
     private void FixedUpdate()

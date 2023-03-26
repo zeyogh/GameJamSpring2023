@@ -12,6 +12,7 @@ public class SpaceStationScript : MonoBehaviour
     public int arrAdded = 0;
     public Dialogue convo;
     public DialogueManager dialogueManager;
+    public AudioSource src;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -50,6 +51,7 @@ public class SpaceStationScript : MonoBehaviour
 
     void TurnOn(){
         this.GetComponent<SpriteRenderer>().sprite = TurnedOn;
+        src.Play();
     }
     
 }
