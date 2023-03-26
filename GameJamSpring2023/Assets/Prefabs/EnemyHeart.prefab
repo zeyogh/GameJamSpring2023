@@ -62,11 +62,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.007296562, y: 0.2557509}
-      - {x: -0.50596625, y: 0.009857982}
-      - {x: -0.49292988, y: -0.013692021}
+    - - {x: 0.23068011, y: 0.16781154}
+      - {x: 0.007296562, y: 0.2557509}
+      - {x: -0.21328616, y: 0.22571734}
+      - {x: -0.26807982, y: -0.012918398}
+      - {x: -0.23479766, y: -0.2363943}
       - {x: 0.004060507, y: -0.25447837}
-      - {x: 0.52055955, y: 0.0025615692}
+      - {x: 0.25989664, y: -0.07082895}
 --- !u!114 &4324071081563116375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 8
-  newParentObject: {fileID: 5224109569575150290, guid: 46157cbd2ba058940bb4c0d23e46eaea, type: 3}
 --- !u!1 &5869520026499586036
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,7 +204,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3625043607559282579, guid: 19fb86013d8c24d6cb8410c0aadf30fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3aab6168da6cc8499d25e5990f0b33b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
