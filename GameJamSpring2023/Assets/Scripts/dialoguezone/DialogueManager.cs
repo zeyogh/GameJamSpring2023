@@ -27,6 +27,8 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private Dialogue currDialogue;
 
+    private GameManager gameManager;
+
 
     private void Awake()
     {
@@ -35,6 +37,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         if (startConversation != null)
         {
             StartDialogue(startConversation);
@@ -87,6 +90,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        gameManager.PauseGame();
         //  Debug.Log("Starting conversation with " + dialogue.NPCName);
 
         currDialogue = dialogue;
@@ -114,7 +118,15 @@ public class DialogueManager : MonoBehaviour
 
         dialoguePanel.SetActive(true);
         continueButton.gameObject.SetActive(true);
-        sentences.Clear();
+
+        if (sentences != null)
+        {
+            sentences.Clear();
+        } else
+        {
+            sentences = new Queue<string>();
+        }
+        
 
 
         nameText.text = currDialogue.character.NPCName;
@@ -158,7 +170,7 @@ public class DialogueManager : MonoBehaviour
         }
         if (currDialogue.nextDialogue == null)
         {
-
+            gameManager.UnpauseGame();
             dialoguePanel.SetActive(false);
             //   characterSprite.gameObject.SetActive(false);
             continueButton.gameObject.SetActive(false);
