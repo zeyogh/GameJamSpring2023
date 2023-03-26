@@ -30,7 +30,8 @@ Transform:
   m_LocalPosition: {x: 100.1051, y: 12.9924, z: -2.6783817}
   m_LocalScale: {x: 2.196278, y: 2.196278, z: 2.196278}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7048842513713765305}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -127,3 +128,157 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &4664524424824885455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3863426987469597008}
+    m_Modifications:
+    - target: {fileID: 2407522182290115441, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 3863426987469597008}
+    - target: {fileID: 2407522182290115441, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: layerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.027501933
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115447, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_Name
+      value: Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407522182290115447, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2407522182290115441, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+    - {fileID: 7334863436773480054, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+--- !u!120 &7048842511894446893 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 2407522181563421666, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+  m_PrefabInstance: {fileID: 4664524424824885455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7048842512395002740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2407522181063635899, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+  m_PrefabInstance: {fileID: 4664524424824885455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7048842512593293325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2407522181263753410, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+  m_PrefabInstance: {fileID: 4664524424824885455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &3500954149147284427
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7048842512593293325}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.25}
+  m_EdgeRadius: 0
+--- !u!114 &6231468212989684060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7048842512593293325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84922b67cb5960a4d981cebf13329a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7048842513713765304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2407522182290115447, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+  m_PrefabInstance: {fileID: 4664524424824885455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4847655693125169807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7048842513713765304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcddf7b2b5483a34fbdfbee7ccfc9f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laser: {fileID: 7048842513713765304}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  lineRenderer: {fileID: 7048842511894446893}
+  firePoint: {fileID: 3863426987469597008}
+  startVFX: {fileID: 7048842512395002740}
+  endVFX: {fileID: 7048842512593293325}
+--- !u!4 &7048842513713765305 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2407522182290115446, guid: 6cd83caabdd49dc449de7aff57dde467, type: 3}
+  m_PrefabInstance: {fileID: 4664524424824885455}
+  m_PrefabAsset: {fileID: 0}

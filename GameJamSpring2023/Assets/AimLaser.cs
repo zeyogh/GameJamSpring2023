@@ -2,33 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserBehavior : MonoBehaviour
+public class AimLaser : MonoBehaviour
 {
+
+    [SerializeField] GameObject laser;
+
     [SerializeField] LayerMask layerMask;
-    public Camera cam;
     public LineRenderer lineRenderer;
     public Transform firePoint;
     public GameObject startVFX;
     public GameObject endVFX;
 
+
     private Quaternion rotation;
     private List<ParticleSystem> particles = new List<ParticleSystem>();
+
+    private GameObject ratKing;
+    private Vector3 rk;
+    private float time = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
         fillLists();
-        disableLaser();
-        cam = Camera.main;
+        ratKing = GameObject.FindWithTag("Boss");
+        enableLaser();
 
-        Physics2D.IgnoreLayerCollision(6, 6);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (ratKing == null)
         {
+            disableLaser();
+            return;
+        }
+        time += Time.deltaTime;
+        updateLaser();
+        /*if (Input.GetButtonDown("Fire1"))
+        {
+            Debug.Log("happened");
             enableLaser();
         }
 
@@ -40,9 +54,9 @@ public class LaserBehavior : MonoBehaviour
         if (Input.GetButtonUp("Fire1"))
         {
             disableLaser();
-        }
+        }*/
 
-        rotateToMouse();
+        rotateToRK();
     }
 
     public void setFirePoint(Transform t)
@@ -54,7 +68,7 @@ public class LaserBehavior : MonoBehaviour
     {
         lineRenderer.enabled = true;
 
-        for(int i = 0; i < particles.Count; i++)
+        for (int i = 0; i < particles.Count; i++)
         {
             particles[i].Play();
         }
@@ -62,20 +76,33 @@ public class LaserBehavior : MonoBehaviour
 
     void updateLaser()
     {
-        var mousePos = (Vector2)cam.ScreenToWorldPoint(Input.mousePosition);
+
+        rk = ratKing.transform.position;
+
+        Vector3 difference = rk - gameObject.transform.position;
+        float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
 
         lineRenderer.SetPosition(0, (Vector2)firePoint.position); //first position
 
         startVFX.transform.position = (Vector2)firePoint.position;
 
-        lineRenderer.SetPosition(1, mousePos); //second position/point
+        lineRenderer.SetPosition(1, rk); //second position/point
 
-        Vector2 direction = mousePos - (Vector2)transform.position;
+        Vector2 direction = (Vector2)rk - (Vector2)transform.position;
         RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position, direction.normalized, direction.magnitude, layerMask);
-    
+
         if (hit)
         {
             lineRenderer.SetPosition(1, hit.point);
+            if (time > 1f)
+            {
+                ratKing.GetComponent<EnemyHealth>().hit();
+                ratKing.GetComponent<EnemyHealth>().hit();
+                ratKing.GetComponent<EnemyHealth>().hit();
+                ratKing.GetComponent<EnemyHealth>().hit();
+                ratKing.GetComponent<EnemyHealth>().hit();
+                time = 0;
+            }
         }
 
         endVFX.transform.position = (Vector2)lineRenderer.GetPosition(1);
@@ -92,13 +119,12 @@ public class LaserBehavior : MonoBehaviour
         }
     }
 
-    void rotateToMouse()
+    void rotateToRK()
     {
-        Vector2 direction = cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        Vector2 direction = (Vector2)rk - (Vector2)transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         rotation.eulerAngles = new Vector3(0, 0, angle);
         //transform.rotation = rotation;
-        firePoint.transform.rotation = rotation;
         startVFX.transform.rotation = rotation;
         endVFX.transform.rotation = rotation;
     }
