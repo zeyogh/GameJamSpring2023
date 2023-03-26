@@ -188,6 +188,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2663199021280339357, guid: 004ce3aa9ac8fd0439f8c67fb0e72a5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5051006523557880069, guid: 004ce3aa9ac8fd0439f8c67fb0e72a5b, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -230,6 +234,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5051006523557880069, guid: 004ce3aa9ac8fd0439f8c67fb0e72a5b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8255033920476852124, guid: 004ce3aa9ac8fd0439f8c67fb0e72a5b, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

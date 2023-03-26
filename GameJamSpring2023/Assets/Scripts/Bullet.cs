@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
         if ((collision.gameObject.tag == "Enemy"))
         {
             GameObject enemy = collision.gameObject;
-            enemy.GetComponent<Enemy>().hit();
+            enemy.GetComponent<EnemyHealth>().hit();
             Debug.Log("kablooie");
         //    Destroy(collision.gameObject);
             Destroy(gameObject);

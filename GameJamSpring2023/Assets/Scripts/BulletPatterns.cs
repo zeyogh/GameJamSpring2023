@@ -12,6 +12,7 @@ public class BulletPatterns : MonoBehaviour
 
     public bool useMultiBulletCircle;
 
+
     private void Start()
     {
         if (useSpiral)
