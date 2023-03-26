@@ -43,13 +43,14 @@ public class Projectile : MonoBehaviour
         this.speed = speed;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("hit detected");
         Destroy(gameObject);
-        if (other.gameObject.tag.Equals("Player"))
+        if (collision.gameObject.tag.Equals("Player"))
         {
-            other.GetComponent<PlayerController>().hit();
+            collision.GetComponent<PlayerController>().hit();
         }
     }
 }

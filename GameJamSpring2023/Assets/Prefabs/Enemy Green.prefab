@@ -64,7 +64,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 2663199021280339357}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 2
   m_LinearDrag: 0
@@ -73,7 +73,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 9e7fe61e28d4e9a40829e78b22b43a42, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &625298902164225098
 MonoBehaviour:
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 8688518514111317809}
   - component: {fileID: 5442402479092435749}
   - component: {fileID: 6772061898815708651}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SpikeBabySpriteGreenFire_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: ea3229db65ebe714389370238fb75a78, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 

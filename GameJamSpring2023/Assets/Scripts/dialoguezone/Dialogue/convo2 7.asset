@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
   m_Name: convo2 7
   m_EditorClassIdentifier: 
-  character: {fileID: 0}
+  character: {fileID: 11400000, guid: 54ce5f2ed50734b448380188cfd1c42e, type: 2}
   sentences:
   - "D\u2019awww, you think?"
   nextDialogue: {fileID: 0}
