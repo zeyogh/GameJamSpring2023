@@ -9,7 +9,7 @@ TagManager:
   - BulletHolder
   - EnemyLaser
   - BulletSprite
-  - Barrier
+  - Boss
   layers:
   - Default
   - TransparentFX
