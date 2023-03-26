@@ -9,6 +9,11 @@ public class Projectile : MonoBehaviour
     private Vector2 moveDirection;
     private bool activateMove = false;
 
+    private void Start()
+    {
+        
+    }
+
     private void Update()
     {
         if (activateMove)
