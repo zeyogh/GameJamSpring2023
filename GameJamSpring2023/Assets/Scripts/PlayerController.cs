@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject bulletStart;
     public float bulletSpeed = 20.0f;
+    public int health = 5;
 
     public float movementSpeed = 1000.0f;
     private float angle;
@@ -83,5 +84,14 @@ public class PlayerController : MonoBehaviour
             b.GetComponent<Rigidbody2D>().velocity = vel * bulletSpeed;
         }
         
+    }
+
+    public void hit()
+    {
+        health--;
+        if (health <=0)
+        {
+            Debug.Log("u died :(");
+        }
     }
 }
