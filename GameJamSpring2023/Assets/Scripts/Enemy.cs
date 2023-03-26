@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour
 
     public float bulletSpeed = 60.0f;
 
+    public int health = 5;
+
     private Vector3 target;
 
     private float time;
@@ -54,6 +56,18 @@ public class Enemy : MonoBehaviour
         b.transform.position = bulletStart.transform.position;
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+    }
+
+    public void hit()
+    {
+        if (health > 0)
+        {
+            health--;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

@@ -24,8 +24,10 @@ public class Bullet : MonoBehaviour
         //Debug.Log("tag: " + collision.gameObject.tag);
         if ((collision.gameObject.tag == "Enemy"))
         {
+            GameObject enemy = collision.gameObject;
+            enemy.GetComponent<Enemy>().hit();
             Debug.Log("kablooie");
-            Destroy(collision.gameObject);
+        //    Destroy(collision.gameObject);
             Destroy(gameObject);
         }
     }
