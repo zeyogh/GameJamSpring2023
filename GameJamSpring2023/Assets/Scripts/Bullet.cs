@@ -13,8 +13,8 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.tag.Equals("Player")) {
-            Debug.Log("hit detected");
+        if (other.tag.Equals("Player")) {
+            Debug.Log("kablooie");
             Destroy(gameObject);
         }
 
