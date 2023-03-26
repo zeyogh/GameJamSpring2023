@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3969782491812356387}
   - component: {fileID: 4399384025589174596}
+  - component: {fileID: 7516128596204363411}
   m_Layer: 0
   m_Name: EnemySpiral
   m_TagString: Untagged
@@ -132,3 +133,34 @@ MonoBehaviour:
   bullet: {fileID: 5761626677960984209, guid: c2f3e6f2955812b449bd34c0f1a9fd5c, type: 3}
   useSpiral: 1
   useMultiBulletCircle: 0
+--- !u!60 &7516128596204363411
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7606188518888978068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.2501011, y: 0.447145}
+      - {x: -0.49870294, y: 0.006201774}
+      - {x: -0.23895997, y: -0.44044697}
+      - {x: 0.25405222, y: -0.43280888}
+      - {x: 0.50222445, y: -0.012642503}
+      - {x: 0.24682444, y: 0.44723088}
