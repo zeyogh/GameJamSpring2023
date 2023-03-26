@@ -103,7 +103,7 @@ public class SpaceStationManager : MonoBehaviour
                 angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).5;
             }else
             {
-                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).605;
+                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).625;
             }
             diagDistance = Mathf.Sqrt(((x-x2)*(x-x2)) + ((y-y2)*(y-y2)));
 
@@ -129,7 +129,7 @@ public class SpaceStationManager : MonoBehaviour
                 angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).5;
             }else
             {
-                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).605;
+                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).625;
             }
             diagDistance = Mathf.Sqrt(((x-x2)*(x-x2)) + ((y-y2)*(y-y2)));
 
@@ -154,7 +154,7 @@ public class SpaceStationManager : MonoBehaviour
                 angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).5;
             }else
             {
-                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).605;
+                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).625;
             }
             diagDistance = Mathf.Sqrt(((x-x2)*(x-x2)) + ((y-y2)*(y-y2)));
 
@@ -179,7 +179,7 @@ public class SpaceStationManager : MonoBehaviour
                 angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).5;
             }else
             {
-                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).605;
+                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).625;
             }
             diagDistance = Mathf.Sqrt(((x-x2)*(x-x2)) + ((y-y2)*(y-y2)));
 
@@ -204,7 +204,7 @@ public class SpaceStationManager : MonoBehaviour
                 angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).5;
             }else
             {
-                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).605;
+                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).625;
             }
             diagDistance = Mathf.Sqrt(((x-x2)*(x-x2)) + ((y-y2)*(y-y2)));
 
@@ -229,7 +229,7 @@ public class SpaceStationManager : MonoBehaviour
                 angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).5;
             }else
             {
-                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).605;
+                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).625;
             }
             diagDistance = Mathf.Sqrt(((x-x2)*(x-x2)) + ((y-y2)*(y-y2)));
 
@@ -254,7 +254,7 @@ public class SpaceStationManager : MonoBehaviour
                 angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).5;
             }else
             {
-                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).605;
+                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).625;
             }
             diagDistance = Mathf.Sqrt(((x-x2)*(x-x2)) + ((y-y2)*(y-y2)));
 
@@ -279,7 +279,7 @@ public class SpaceStationManager : MonoBehaviour
                 angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).5;
             }else
             {
-                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).605;
+                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).625;
             }
             diagDistance = Mathf.Sqrt(((x-x2)*(x-x2)) + ((y-y2)*(y-y2)));
 
@@ -304,7 +304,7 @@ public class SpaceStationManager : MonoBehaviour
                 angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).5;
             }else
             {
-                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).605;
+                angleRotaion = (float)System.Math.Atan((y-y2)/(x-x2))*(float).62;
             }
             diagDistance = Mathf.Sqrt(((x-x2)*(x-x2)) + ((y-y2)*(y-y2)));
 
