@@ -413,9 +413,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mapDimensions: 150
-  enemy1: {fileID: 2663199021280339357, guid: 004ce3aa9ac8fd0439f8c67fb0e72a5b, type: 3}
-  enemy2: {fileID: 7606188518888978068, guid: 7a4a1408ee961c442a57821e7033e7af, type: 3}
-  enemy3: {fileID: 721355851311988927, guid: 234d181c681388e4ab2bfb381355e609, type: 3}
+  enemy1: {fileID: 2663199021280339357, guid: 819f4372bd038a045b7646e76c5f39aa, type: 3}
+  enemy2: {fileID: 721355851311988927, guid: eeb5cf07274195843a883f1d2200b5a9, type: 3}
+  enemy3: {fileID: 2663199021280339357, guid: 0c9049a606314fe4c88cea1dd595ed6c, type: 3}
 --- !u!1 &565565519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3446636073634711693, guid: bfe7ef611e3482243b796c9ae404171a, type: 3}
