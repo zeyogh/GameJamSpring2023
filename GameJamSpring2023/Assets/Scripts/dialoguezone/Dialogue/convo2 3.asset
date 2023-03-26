@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
-  m_Name: 1.05
+  m_Name: convo2 3
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 54ce5f2ed50734b448380188cfd1c42e, type: 2}
   sentences:
-  - Less talking, more blasting! We need to clear the airspace before they breach
-    the planet!
-  nextDialogue: {fileID: 11400000, guid: 390f1b80bb0917e44b981af660f3b353, type: 2}
+  - I hid and watched helplessly as they killed my entire family in front of me.
+    And my little dog too.
+  nextDialogue: {fileID: 11400000, guid: 9659f49a62503784d93099f7bc84e058, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

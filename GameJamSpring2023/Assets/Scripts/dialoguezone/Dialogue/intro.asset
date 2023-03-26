@@ -27,9 +27,6 @@ MonoBehaviour:
   - "(Granted, the exact flavor of human-eating abominations probably doesn\u2019t
     matter, but we value accuracy in this narration.)"
   - "A lone SPACE EXORCIST arrived to turn the tides of war\u2026\r"
-  - "Controls: \nWASD or arrow keys to move\nspace to fire\npress m while over a
-    space station to activate it (try to get them all!)\npause: backspace, unpause
-    esc"
   nextDialogue: {fileID: 0}
   dialogueTail: {fileID: 11400000, guid: ca4553dbc4bb73b4db6cec07a90579fb, type: 2}
   background: {fileID: 0}

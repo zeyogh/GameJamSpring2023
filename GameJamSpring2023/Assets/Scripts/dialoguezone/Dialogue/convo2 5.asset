@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
-  m_Name: 1.05
+  m_Name: convo2 5
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 54ce5f2ed50734b448380188cfd1c42e, type: 2}
   sentences:
-  - Less talking, more blasting! We need to clear the airspace before they breach
-    the planet!
-  nextDialogue: {fileID: 11400000, guid: 390f1b80bb0917e44b981af660f3b353, type: 2}
+  - "Have you ever wondered what it looks like when all the veins and arteries in
+    someone\u2019s body are slowly slurped out of them like flesh spaghetti?"
+  nextDialogue: {fileID: 11400000, guid: 2fae6a29f6eed334d97dfd290599a4c7, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

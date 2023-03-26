@@ -25,7 +25,8 @@ public class MapColliderManager : MonoBehaviour
             }
         }
 
-        if(collision.tag == "Projectile"){
+        if(collision.tag == "Projectile")
+        {
             Destroy(collision);
         }
     }

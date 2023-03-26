@@ -10,6 +10,8 @@ public class SpaceStationScript : MonoBehaviour
     public int OnOrOff = 0; // on is 1 off is 0
     int playerIsInMeXD = 0;
     public int arrAdded = 0;
+    public Dialogue convo;
+    public DialogueManager dialogueManager;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -36,9 +38,13 @@ public class SpaceStationScript : MonoBehaviour
              if(playerIsInMeXD == 1 && OnOrOff == 0){
                 OnOrOff = 1;
                 TurnOn();
+                if (convo != null && dialogueManager != null)
+                {
+                    dialogueManager.StartDialogue(convo);
+                }
              }
         }
-
+        
         
     }
 

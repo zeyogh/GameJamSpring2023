@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
-  m_Name: 1.05
+  m_Name: convo1 2
   m_EditorClassIdentifier: 
-  character: {fileID: 11400000, guid: 54ce5f2ed50734b448380188cfd1c42e, type: 2}
+  character: {fileID: 11400000, guid: bf46e0f6317366f46a2f810161784248, type: 2}
   sentences:
-  - Less talking, more blasting! We need to clear the airspace before they breach
-    the planet!
-  nextDialogue: {fileID: 11400000, guid: 390f1b80bb0917e44b981af660f3b353, type: 2}
+  - Hold for a second, Vessel #69420.
+  nextDialogue: {fileID: 11400000, guid: f9daa80bcc2d12b419f8264f678c1f62, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

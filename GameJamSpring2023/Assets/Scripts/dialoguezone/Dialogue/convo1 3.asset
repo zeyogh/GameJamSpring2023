@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b61326ffce62c04595f5ff644626ae5, type: 3}
-  m_Name: 1.05
+  m_Name: convo1 3
   m_EditorClassIdentifier: 
   character: {fileID: 11400000, guid: 54ce5f2ed50734b448380188cfd1c42e, type: 2}
   sentences:
-  - Less talking, more blasting! We need to clear the airspace before they breach
-    the planet!
-  nextDialogue: {fileID: 11400000, guid: 390f1b80bb0917e44b981af660f3b353, type: 2}
+  - (Unit 3, is there a problem?)
+  nextDialogue: {fileID: 11400000, guid: b28e5427e04a9fe498eec1c85dbb859b, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}
