@@ -10,10 +10,12 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletStart;
     public float bulletSpeed = 20.0f;
     public int health = 5;
+    public AudioSource src;
 
     public float movementSpeed = 1000.0f;
     private float angle;
     private Vector2 targetVelocity;
+    private float time = 0f;
 
     void Awake()
     {
@@ -35,12 +37,23 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
         Move(targetVelocity);
+        time += Time.deltaTime;
     }
 
     void Move(Vector2 targetVelocity)
     {
         // Set rigidbody velocity
         rigidbody2D.velocity = (targetVelocity * movementSpeed * Time.deltaTime) ; // Multiply the target by deltaTime to make movement speed consistent across different framerates
+        playSound();
+    }
+
+    void playSound()
+    {
+        if (time > 3)
+        {
+            src.Play();
+        }
+        time += 0;
     }
 
     public void Fire()
