@@ -47,5 +47,9 @@ public class Projectile : MonoBehaviour
     {
         Debug.Log("hit detected");
         Destroy(gameObject);
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            other.GetComponent<PlayerController>().hit();
+        }
     }
 }
