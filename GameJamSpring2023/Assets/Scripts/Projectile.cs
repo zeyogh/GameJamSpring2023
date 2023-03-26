@@ -9,9 +9,14 @@ public class Projectile : MonoBehaviour
     private Vector2 moveDirection;
     private bool activateMove = false;
 
+    private GameObject player; //the enemy the projectile is coming from
+    private Collider2D playerCollider;
+
     private void Start()
     {
-        
+        player = gameObject.transform.parent.gameObject;
+        playerCollider = player.GetComponent<Collider2D>();
+        Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), playerCollider, true);
     }
 
     private void Update()

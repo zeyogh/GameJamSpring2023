@@ -48,6 +48,21 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("hit enemy!");
+
+        Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
+
+        //rb.isKinematic = true;
+
+        //stop velocity
+        rb.velocity = Vector3.zero;
+
+        //stop rotating
+        rb.angularVelocity = 0f;
+        Debug.Log(rb.velocity);
+    }
 
 
     void fireBullet(Vector2 direction, float rotationZ)
@@ -56,6 +71,7 @@ public class Enemy : MonoBehaviour
         b.transform.position = bulletStart.transform.position;
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+        b.transform.parent = gameObject.transform;
     }
 
     public void hit()
