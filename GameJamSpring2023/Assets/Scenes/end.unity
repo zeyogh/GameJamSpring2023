@@ -538,16 +538,24 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5454099610089690953, guid: b196caa086dc5bc438af3a930376dee3, type: 3}
-      propertyPath: m_Color.b
+      propertyPath: m_Type
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454099610089690953, guid: b196caa086dc5bc438af3a930376dee3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a47ba28614c4afb42b0f2575e7dfab86, type: 3}
+    - target: {fileID: 5454099610089690953, guid: b196caa086dc5bc438af3a930376dee3, type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5454099610089690953, guid: b196caa086dc5bc438af3a930376dee3, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5454099610089690953, guid: b196caa086dc5bc438af3a930376dee3, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5522398234937151951, guid: b196caa086dc5bc438af3a930376dee3, type: 3}
       propertyPath: m_text
@@ -1360,6 +1368,7 @@ MonoBehaviour:
   conversationHeads: []
   startConversation: {fileID: 11400000, guid: 0383e4ef244138446ba677b7799ab8e9, type: 2}
   characters: []
+  gameManager: {fileID: 221430157}
 --- !u!4 &2062322052
 Transform:
   m_ObjectHideFlags: 0

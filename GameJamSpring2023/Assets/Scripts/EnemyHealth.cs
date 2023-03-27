@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHealth : MonoBehaviour
 {
 
     [SerializeField] int health;
     private GameObject newParentObject;
+
 
     private void Start()
     {
@@ -26,6 +28,10 @@ public class EnemyHealth : MonoBehaviour
         }
         else
         {
+            if (gameObject.tag == "Boss")
+            {
+                SceneManager.LoadScene("end");
+            }
             Transform[] allChildren = GetComponentsInChildren<Transform>();
             foreach (Transform child in allChildren)
             {

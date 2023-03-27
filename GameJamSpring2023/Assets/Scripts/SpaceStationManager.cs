@@ -15,6 +15,15 @@ public class SpaceStationManager : MonoBehaviour
     [SerializeField]GameObject SS8;
     [SerializeField]GameObject SS9;
     [SerializeField]GameObject beamPrefab;
+    [SerializeField] GameObject l1;
+    [SerializeField] GameObject l2;
+    [SerializeField] GameObject l3;
+    [SerializeField] GameObject l4;
+    [SerializeField] GameObject l5;
+    [SerializeField] GameObject l6;
+    [SerializeField] GameObject l7;
+    [SerializeField] GameObject l8;
+    [SerializeField] GameObject l9;
     GameObject[] SpSt = new GameObject[10];
     int index = 0;
     float x, y, x2, y2;
@@ -101,16 +110,19 @@ public class SpaceStationManager : MonoBehaviour
 
         if(index == 10){
             allOn = 1;
-            SS1.GetComponent<Laser>().enabled = true;
-            SS2.GetComponent<Laser>().enabled = true;
-            SS3.GetComponent<Laser>().enabled = true;
-            SS4.GetComponent<Laser>().enabled = true;
-            SS5.GetComponent<Laser>().enabled = true;
-            SS6.GetComponent<Laser>().enabled = true;
-            SS7.GetComponent<Laser>().enabled = true;
-            SS8.GetComponent<Laser>().enabled = true;
-            SS9.GetComponent<Laser>().enabled = true;
+            if (SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("Level2")))
+            {
+                l1.SetActive(true);
+                l2.SetActive(true);
+                l3.SetActive(true);
+                l4.SetActive(true);
+                l5.SetActive(true);
+                l6.SetActive(true);
+                l7.SetActive(true);
+                l8.SetActive(true);
+                l9.SetActive(true);
 
+            }
         }
         
         

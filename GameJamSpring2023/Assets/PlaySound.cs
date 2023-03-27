@@ -16,20 +16,6 @@ public class PlaySound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-
-        if (time > timer)
-        {
-            int r = rand.Next(1, 3);
-            if (r == 1 || b == null)
-            {
-                a.Play();
-            }
-            else
-            {
-                b.Play();
-            }
-        }
-
     }
+
 }

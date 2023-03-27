@@ -27,8 +27,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     private Dialogue currDialogue;
 
-    private GameManager gameManager;
-
+    public GameManager gameManager;
 
     private void Awake()
     {
@@ -37,7 +36,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();
+     //   gameManager = FindObjectOfType<GameManager>();
         if (startConversation != null)
         {
             StartDialogue(startConversation);

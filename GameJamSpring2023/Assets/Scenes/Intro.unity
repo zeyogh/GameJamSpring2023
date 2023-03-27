@@ -730,6 +730,7 @@ MonoBehaviour:
   conversationHeads: []
   startConversation: {fileID: 11400000, guid: 6213d1a2518d5ab46a0a92b844f87b60, type: 2}
   characters: []
+  gameManager: {fileID: 175533388}
 --- !u!4 &913103984
 Transform:
   m_ObjectHideFlags: 0

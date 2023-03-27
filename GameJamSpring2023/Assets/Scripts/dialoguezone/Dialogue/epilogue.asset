@@ -23,6 +23,6 @@ MonoBehaviour:
     against the hordes of evil.
   - "Who was this heroic, homicidal champion of humanity? It seems that only the
     stars will ever know\u2026"
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 11400000, guid: 0c39cf54298ef024aa6be2faecb25552, type: 2}
   dialogueTail: {fileID: 0}
   background: {fileID: 0}

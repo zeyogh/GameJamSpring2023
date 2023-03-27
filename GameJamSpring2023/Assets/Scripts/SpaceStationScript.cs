@@ -14,30 +14,44 @@ public class SpaceStationScript : MonoBehaviour
     public DialogueManager dialogueManager;
 
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            playerIsInMeXD = 1;
-            Debug.Log("In SpaceStation");
-            
-        }
-    }
 
-    void OnTriggerExit2D(Collider2D other){
-        if (other.tag == "Player")
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
         {
             playerIsInMeXD = 0;
             Debug.Log("NOT In SpaceStation");
-            
+
         }
+    }
+
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            playerIsInMeXD = 1;
+            Debug.Log("In SpaceStation");
+
+        }
+    }
+
+    void TurnOn()
+    {
+        this.GetComponent<SpriteRenderer>().sprite = TurnedOn;
     }
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.M)){
+            Debug.Log("m");
              if(playerIsInMeXD == 1 && OnOrOff == 0){
                 OnOrOff = 1;
+                Debug.Log("fhkldsjflksdjflkdsjkfldsjfldsjlkfjldksj");
+
+                TurnOn();
 
                 if (convo != null && dialogueManager != null)
                 {
